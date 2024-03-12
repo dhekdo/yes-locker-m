@@ -1,0 +1,56 @@
+@import "common", "popup";
+
+.main {
+    margin: 1.5rem 1.45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #EB4E3D;
+        text-align: center;
+    }
+
+    >div {
+
+        input {
+            width: 100%;
+            @include inputstyle;
+
+            &::placeholder {
+                opacity: 0.2;
+            }
+
+            &.find_info_num {
+                width: 3rem;
+            }
+        }
+
+        >div {
+
+            .find_info_text {
+                font-size: 1.15rem;
+                font-weight: 500;
+                vertical-align: bottom;
+                margin-left: 0.2rem;
+            }
+
+            &:first-child {
+                margin-bottom: 1rem;
+            }
+        }
+
+        
+
+    }
+}
+
+

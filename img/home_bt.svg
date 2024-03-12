@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133" height="69" viewBox="0 0 133 69">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_983" data-name="사각형 983" width="133" height="69" transform="translate(130)" fill="none"/>
+    </clipPath>
+    <filter id="사각형_840" x="0.5" y="-63.5" width="133" height="133" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5391ff"/>
+      <stop offset="1" stop-color="#3379f5"/>
+    </linearGradient>
+    <filter id="패스_42988" x="39.528" y="-8.808" width="58.576" height="56.305" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur-2"/>
+      <feFlood flood-color="#3379f5" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="마스크_그룹_31" data-name="마스크 그룹 31" transform="translate(-130)" clip-path="url(#clip-path)">
+    <g id="그룹_9618" data-name="그룹 9618" transform="translate(-278.78 52.22)">
+      <g transform="matrix(1, 0, 0, 1, 408.78, -52.22)" filter="url(#사각형_840)">
+        <rect id="사각형_840-2" data-name="사각형 840" width="88" height="88" rx="44" transform="translate(23 -44)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 408.78, -52.22)" filter="url(#패스_42988)">
+        <path id="패스_42988-2" data-name="패스 42988" d="M12.787,0,0,12.56H3.329V23.305h6.75V17H15.5v6.306h6.75V12.56h3.329Z" transform="translate(54.03 6.69)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- 폰트 -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'lzb0icn',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+      <!-- 폰트 끝 -->
+    <link rel="stylesheet" href="./css/info.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header>
+            <button class="home_bt">
+                <img src="./img/home_bt.svg" alt="홈버튼">
+            </button>
+            <div class="title_box">
+                
+                <div class="text_box">
+                    <h5 class="blue_text">보관함 예약</h5>
+                    <h1 class="title">
+                        정보를<br>입력해주세요
+                    </h1>
+                </div>
+                <div class="img_box">
+                    <img src="./img/title_img2.png" alt="타이틀이미지">
+                </div>
+
+            </div>
+        </header>
+
+        <!-- 메인 -->
+        <div class="main">
+            <div>
+                <h3>보관함 번호</h3>
+                <p>20번</p>
+            </div>
+            <div>
+                <h3>전화번호</h3>
+                <input type="tel" placeholder="010-0000-0000">
+            </div>
+            <div class="mail_box">
+                <h3>이메일</h3>
+                <div>
+                    <input type="text" placeholder="00000"> <span>@</span>
+                    <div class="select_box">
+                        <div class="bg"></div>
+                        <input type="text" placeholder="직접입력">
+                        <img src="./img/down_ar.svg" alt="화살표">
+                        <ul>
+                            <li>gmail.com</li>
+                            <li>naver.com</li>
+                            <li>kakao.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <h3>비밀번호</h3>
+                <input type="number" placeholder="0000">
+            </div>
+            <div>
+                <h3>비밀번호 확인</h3>
+                <input type="number" placeholder="0000">
+            </div>
+                
+        
+            
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="line_wrap blue_line_wrap">
+                <img src="./img/blue_wrap_mo.svg" alt="라인">
+                <div>
+                    <button class="back_bt">이전</button>
+                    <button class="wait_bt next_bt" onclick="popupInfoEnterOpen();">확인</button>   
+                </div>
+            </div>
+            <div class="footer_info">
+                <ul>
+                    <li>개인정보 취급 방침</li>
+                    <li>
+                        사업자등록번호 : 204-86-29073
+                        <br>서울시 마포구 창전로 70 화수목빌딩
+                    </li>
+                    <li>Copyright © 2020 SMART CUBE. All rights reserved.</li>
+                </ul>
+                <div class="sc_logo">
+                    <img src="./img/sc_logo.png" alt="로고">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup_info_enter popup_wrap">
+        <div class="bg"></div>
+        <div class="popup_box">
+            <div class="popup_title">
+                <p>정보 확인</p>
+            </div>
+            <div class="popup_text">
+                <p>기재한 정보를 확인해주세요</p>
+                <table>
+                    <tr>
+                        <td>보관함 번호</td>
+                        <td>20번</td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td>010-1234-5678</td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td>12345678@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td>1234</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bt_wrap">
+                <button class="no_bt">취소</button>
+                <button class="yes_bt" onclick="location.href='pay.html'">확인</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/info.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

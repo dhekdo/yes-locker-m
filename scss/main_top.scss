@@ -1,0 +1,155 @@
+@import "common";
+
+.main_top {
+    // width: 16.7rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 15px #00000012;
+    padding: 0.4rem 1rem 0.4rem 0.2rem;
+    border-radius: 8px;
+
+    >div {
+        display: flex;
+        align-items: center;
+
+        .main_text_box {
+            margin-top: -0.2rem;
+        }
+
+        h6 {
+            font-size: 0.65rem;
+            font-weight: 600;
+
+            &.top_text_red {
+                color: #EB4E3D;
+            }
+
+            &.top_text_yel {
+                color: #FFBB00;
+            }
+        }
+
+        span {
+            font-size: 0.6rem;
+
+            &.data_num {
+                font-size: 1rem;
+                font-weight: 600;
+                margin-right: 0.1rem;
+            }
+        }
+
+        
+    }
+
+    &.pay_top {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 0 0.2rem;
+
+        >div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &:last-child {
+                margin-top: -1rem;
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    
+    &.reservation_top {
+        flex-direction: column;
+        padding: 1.45rem 1.2rem;
+
+        >p {
+            font-size: 1rem;
+            font-weight: 600;
+            color: $maincolor;
+            margin-bottom: 1.45rem;
+        }
+        
+        >div {
+            width: 100%;
+
+            &.top_text {
+                border-bottom: 0.5px solid #707070;
+            }
+
+            &.bottom_text {
+
+                &.find_bottom_text {
+                    
+                    tr {
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                    }
+                }
+
+                tr {
+
+                    &:first-child {
+
+                        
+
+                        td {
+                            padding-top: 0.85rem;
+                        }
+                    }
+
+                    td {
+                        &:last-child {
+                            color: #EB4E3D;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        table {
+            width: 95%;
+            margin: 0 auto;
+            
+            tr {
+
+                td {
+                    font-size: 0.65rem;
+                    padding-bottom: 0.85rem;
+
+                    
+                    &:last-child {
+                        font-size: 0.7rem;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    &.reservation_bottom {
+        padding: 0 ;
+        justify-content: left;
+        margin-top: 0.5rem;
+        height: 2rem;
+
+        span {
+            font-size: 0.65rem;
+            font-weight: 500;
+        }
+    }
+
+    &.find_reservation_bottom {
+        margin-top: 0.5rem;
+    }
+}

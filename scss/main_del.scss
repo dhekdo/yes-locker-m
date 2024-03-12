@@ -1,0 +1,119 @@
+@import "common";
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    // flex-direction: column;
+    grid-auto-flow: row;
+    // justify-content: space-between;
+    // overflow: hidden;
+}
+
+.lang_wrap {
+    padding:  4rem 4rem 0;
+    // margin-bottom: 10vw;
+
+    .lang_inner {
+
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    
+        
+        button {
+            background-color: #fff;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.main {
+    margin: 3rem 0 3.5rem;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .img_wrap {
+        text-align: center;
+        // height: 100%;
+
+        div {
+
+            img {
+                width: 38.2rem;
+            }
+
+            &:first-child {
+                margin-bottom: 8.5rem;
+
+                img {
+                    width: 30rem;
+                }
+            }
+
+        }
+    }
+    
+    .line_wrap {
+        display: flex;
+    
+        div {
+            text-align: center;
+            width: 33.3%;
+    
+            h2 {
+                font-size: 1.9rem;
+                font-weight: 600;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    
+    }
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.2rem;
+    background-color: #EEEEEE;
+
+    ul {
+
+        li {
+            font-size: 1.1rem;
+            margin: 0.4rem 0;
+
+            &:first-child {
+                font-weight: 500;
+            }
+
+            &:nth-child(2), &:nth-child(3) {
+                font-weight: 300;
+                font-size: 1rem;
+            }
+
+            &:last-child {
+                font-weight: 300;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    div {
+        img {
+            width: 7.4rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "common", "popup";
+
+
+
+.lang_wrap {
+    width: 70%;
+    padding: 1.4rem;
+
+    .lang_inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            background-color: #fff;
+            font-size: 0.7rem;
+            font-weight: 500;        
+        }
+
+        .lang_on {
+            color: $maincolor;
+        }
+    }
+}
+
+.main {
+    margin: 1.8rem auto 2rem;
+
+    .img_wrap {
+        
+
+        div {
+            text-align: center;
+
+            &:first-child {
+                margin-bottom: 3.8rem;
+
+                img {
+                    width: 13.5rem;
+                }
+            }
+
+            &:last-child {
+            
+                img {
+                    width: 15.8rem;
+                }
+            }
+        }
+    }
+}
+

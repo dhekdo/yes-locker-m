@@ -1,0 +1,228 @@
+// 메인 버튼 컬러
+$maincolor :#3379F5;
+
+@mixin inputstyle {
+    height: 2.1rem;
+    background-color: #FCFCFC;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 8px #00000012;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.7rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'pretendard', 'sans-serif'; //레귤러(m-500,semi-600)
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+
+    &.wait_bt {
+        background-color: #F5F5F5;
+        color: #CCCCCC;
+    }
+
+    &.bt_on {
+        background-color: #F3F7FF;
+        color: $maincolor;
+    }
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+    .main {
+        height: 100%;
+    }
+}
+
+// 헤더
+header {
+    padding: 1rem 0.5rem 0 0.95rem;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:  translateX(-50%);
+    }
+
+    .title_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text_box {
+            margin-left: 0.5rem;
+
+            h5 {
+                font-size: 0.7rem;
+
+                &.blue_text {
+                    color: $maincolor;
+                }
+
+                &.red_text {
+                    color: #EB4E3D;
+                }
+
+                &.yel_text {
+                    color: #FFBB00;
+                }
+            }
+
+            h1 {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-top: 0.2rem;
+            }
+        }
+
+        .img_box {
+            
+            img {
+                width: 6.75rem;
+            }
+        }
+    }
+}
+//헤더 끝
+
+// 푸터
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .line_wrap {
+        width: 100%;
+        display: flex;
+        height: 3.4rem;
+        // margin-bottom: 1.3rem;
+
+        div {
+            
+            width: 33.333%;
+
+            img {
+                width: 100%;
+                margin-bottom: 0.3rem;
+            }
+
+            h2 {
+                font-size: 0.7rem;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+
+    .blue_line_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        >img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            img {
+                width: 100%;
+            }
+
+
+            button {
+                height: 100%;
+                font-size: 0.7rem;
+                font-weight: 600;
+                text-align: center;
+                width: 50%;
+                height: 100%;
+                // background-color: #fff;
+
+                &.full_bt {
+                    width: 100%;
+                    background-color: #F3F7FF;
+                    color: $maincolor;
+                }
+            }
+        }
+        
+    }
+
+    .footer_info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #FBFBFB;
+
+        ul {
+
+            li {
+                font-size: 0.6rem;
+                line-height: 1.5;
+                
+    
+                &:first-child {
+                    font-weight: 500;
+                }
+    
+                &:nth-child(2) {
+                    font-size: 0.55rem;
+                    font-weight: 300;
+                    color: #9A9A9A;
+                }
+    
+                &:last-child {
+                    font-size: 0.5rem;
+                    font-weight: 300;
+                    color: #9A9A9A;
+                }
+            }
+        }
+    
+        .sc_logo {
+    
+            img {
+                width: 3.8rem;
+            }
+        }
+    }    
+}
+// 푸터 끝

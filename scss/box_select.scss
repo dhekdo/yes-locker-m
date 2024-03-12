@@ -1,0 +1,159 @@
+@import "common", "main_top";
+
+.main {
+    margin: 1.5rem 1.45rem;
+
+    .locker_wrap {
+        position: relative;
+
+        >img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 98;
+
+            &.right_ar {
+                right: -0.3rem;
+            }
+
+            &.left_ar {
+                left: -0.3rem;
+                transform: translateY(-50%) rotate(-180deg);
+                opacity: 0;
+            }
+        }
+
+        div {
+
+            &.locker_site {
+                display: flex;
+                justify-content: center;
+                width: 200%;
+
+                .locker {
+                    display: flex;
+                    justify-content: center;
+                    margin: 1.7rem 0;
+                    position: relative;
+                    width: 100%;
+    
+                    ul {
+                        &:not(:last-child) {
+                            margin-right: 0.15rem;
+                        }
+    
+                        &:last-child {
+    
+                            li {
+                                height: 6.45rem;
+                            }
+                        }
+    
+                        li {
+                            width: 2.35rem;
+                            height: 3.15rem;
+                            border: 0.5px solid #4A4A4A;
+                            margin: 0.15rem 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 0.65rem;
+                            font-weight: 500;
+    
+                            &:last-child {
+                                height: 7rem;
+                            }
+    
+                            &.view {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+    
+                                .view_img {
+                                    width: 1.45rem;
+                                    height: 2.7rem;
+                                    background-color: #616161;
+                                    border-radius: 2px;
+                                }
+    
+                                .view_line {
+    
+                                    span {
+                                        display: inline-block;
+                                        width: 0.65rem;
+                                        height: 0.15rem;
+                                        background-color: #616161;
+                                    }
+                                }
+                            }
+
+                            &.use {
+                                background-color: #CCCCCC;
+                                opacity: 0.2;
+                            }
+                        }
+                    }
+
+                    &.locker_right {
+
+                        ul {
+
+                            &:last-child {
+
+                                li {
+                                    height: 3.15rem;
+
+                                    &:last-child {
+                                        height: 7rem;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .color_box {
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+
+            li {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+                span {
+                    font-size: 0.55rem;
+
+                    &:first-child {
+                        display: inline-block;
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border: 0.5px solid #000;
+                        margin-right: 0.2rem;
+
+                        &.color_y {
+                            background-color: #FECB24;
+                            border: none;
+                        }
+
+                        &.color_g {
+                            background-color: #D8D7D7;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
